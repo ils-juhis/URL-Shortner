@@ -44,7 +44,7 @@ class DatabaseService:
   def get_database(self) -> AsyncIOMotorDatabase:
         """Return database instance."""
 
-        if not self.database:
+        if self.database is None:
             raise RuntimeError("Database not initialized")
 
         return self.database

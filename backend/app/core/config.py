@@ -23,8 +23,18 @@ class Settings(BaseSettings):
     ACCESS_TOKEN_EXPIRE_MINUTES: int = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES", 30))
     REFRESH_TOKEN_EXPIRE_DAYS: int = int(os.getenv("REFRESH_TOKEN_EXPIRE_DAYS", 7))
 
-    # Redis
-    REDIS_URL: str = os.getenv("REDIS_URL","redis://localhost:6379/0")
+    SECRET_KEY: str = os.getenv("SECRET_KEY","url_shortener")
+
+    # Email
+    SMTP_HOST: str = os.getenv("SMTP_HOST", "smtp.example.com")
+    SMTP_PORT: int = int(os.getenv("SMTP_PORT", 587))
+    SMTP_USERNAME: str = os.getenv("SMTP_USERNAME", "your-email@example.com")
+    SMTP_PASSWORD: str = os.getenv("SMTP_PASSWORD", "your-password")
+    SMTP_FROM_EMAIL: str = os.getenv("SMTP_FROM_EMAIL", "noreply@example.com")
+
+    # Email Verification
+    EMAIL_VERIFICATION_EXPIRE_HOURS: int = int(os.getenv("EMAIL_VERIFICATION_EXPIRE_HOURS", 24))
+    FRONTEND_URL: str = os.getenv("FRONTEND_URL", "http://localhost:3000")
 
     class Config:
       env_file = "../.env"

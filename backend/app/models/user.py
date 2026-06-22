@@ -5,7 +5,6 @@ class User(Document):
     role_id = UUIDField(required=True)
     first_name = StringField(max_length=100)
     last_name = StringField(max_length=100)
-    username = StringField(max_length=100, unique=True)
     email = StringField(max_length=255, unique=True, required=True)
     password_hash = StringField(required=True)
     profile_image = StringField()

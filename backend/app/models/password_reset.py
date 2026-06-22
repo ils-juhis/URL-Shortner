@@ -1,9 +1,7 @@
-from mongoengine import Document, StringField, DateTimeField, UUIDField, BooleanField
+from pydantic import BaseModel, Field
+from datetime import datetime, timedelta
 
-class PasswordReset(Document):
-    id = UUIDField(primary_key=True)
-    user_id = UUIDField(required=True)
-    token = StringField(max_length=255)
-    expires_at = DateTimeField()
-    used = BooleanField(default=False)
-    created_at = DateTimeField()
+class PasswordReset(BaseModel):
+    email: str
+    otp: str
+    expires_at: datetime = Field(default_factory=lambda: datetime.utcnow() + timedelta(minutes=15))

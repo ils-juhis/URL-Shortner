@@ -1,0 +1,231 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verify Your Email</title>
+</head>
+
+<body style="margin:0;padding:0;background:#fff8f3;font-family:Arial,Helvetica,sans-serif;">
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#fff8f3;padding:30px 15px;">
+<tr>
+<td align="center">
+
+<table width="600" cellpadding="0" cellspacing="0" border="0"
+style="max-width:600px;width:100%;background:#ffffff;border-radius:24px;overflow:hidden;box-shadow:0 15px 40px rgba(249,115,22,0.12);">
+
+    <!-- Header -->
+    <tr>
+        <td align="center"
+            style="background:linear-gradient(135deg,#f97316,#fb923c,#fdba74);padding:50px 30px;">
+
+            <div style="
+                width:80px;
+                height:80px;
+                border-radius:50%;
+                background:rgba(255,255,255,0.2);
+                line-height:80px;
+                font-size:38px;
+                color:#ffffff;
+                margin:auto;
+            ">
+                🔗
+            </div>
+
+            <h1 style="
+                margin:20px 0 10px;
+                color:#ffffff;
+                font-size:32px;
+                font-weight:700;
+            ">
+                URL Shortener
+            </h1>
+
+            <p style="
+                margin:0;
+                color:rgba(255,255,255,0.9);
+                font-size:15px;
+            ">
+                Fast • Secure • Smart Link Management
+            </p>
+
+        </td>
+    </tr>
+
+    <!-- Content -->
+    <tr>
+        <td style="padding:45px 35px;">
+
+            <h2 style="
+                margin-top:0;
+                color:#1f2937;
+                font-size:28px;
+            ">
+                Welcome! 🎉
+            </h2>
+
+            <p style="
+                color:#6b7280;
+                font-size:16px;
+                line-height:1.8;
+            ">
+                Thank you for joining URL Shortener. You're just one click away from activating your account and accessing advanced link management, analytics, QR codes, and tracking features.
+            </p>
+
+            <!-- Verification Card -->
+            <div style="
+                background:linear-gradient(135deg,#fff7ed,#ffedd5);
+                border:1px solid #fed7aa;
+                border-radius:20px;
+                padding:30px;
+                text-align:center;
+                margin:35px 0;
+            ">
+
+                <div style="
+                    width:65px;
+                    height:65px;
+                    border-radius:50%;
+                    background:linear-gradient(135deg,#f97316,#fb923c);
+                    line-height:65px;
+                    font-size:30px;
+                    color:white;
+                    margin:0 auto 20px;
+                ">
+                    ✉️
+                </div>
+
+                <h3 style="
+                    margin:0 0 15px;
+                    color:#9a3412;
+                    font-size:22px;
+                ">
+                    Verify Your Email Address
+                </h3>
+
+                <p style="
+                    margin:0 0 25px;
+                    color:#7c2d12;
+                    line-height:1.7;
+                ">
+                    Click below to confirm your email and complete your account setup.
+                </p>
+
+                <!-- Unique Button -->
+                <a href="{{verification_url}}"
+                   style="
+                    display:inline-block;
+                    text-decoration:none;
+                    background:linear-gradient(135deg,#f97316,#ea580c);
+                    color:white;
+                    padding:16px 32px;
+                    border-radius:999px;
+                    font-size:16px;
+                    font-weight:700;
+                    box-shadow:0 10px 25px rgba(249,115,22,0.25);
+                   ">
+                    Verify Email →
+                </a>
+
+            </div>
+
+            <!-- Expiry Info -->
+            <div style="
+                background:#fff7ed;
+                border-left:5px solid #f97316;
+                padding:16px;
+                border-radius:10px;
+                margin-bottom:25px;
+            ">
+                <p style="
+                    margin:0;
+                    color:#9a3412;
+                    font-size:15px;
+                ">
+                    ⏰ This verification link will expire in
+                    <strong>{{expire_hours}} hours</strong>.
+                </p>
+            </div>
+
+            <p style="
+                color:#6b7280;
+                font-size:15px;
+                line-height:1.8;
+            ">
+                If the button above doesn't work, copy and paste this link into your browser:
+            </p>
+
+            <div style="
+                background:#f9fafb;
+                border:1px solid #e5e7eb;
+                border-radius:12px;
+                padding:15px;
+                word-break:break-all;
+            ">
+                <a href="{{verification_url}}"
+                   style="
+                    color:#ea580c;
+                    text-decoration:none;
+                    font-size:14px;
+                   ">
+                    {{verification_url}}
+                </a>
+            </div>
+
+            <p style="
+                margin-top:30px;
+                color:#9ca3af;
+                font-size:14px;
+                line-height:1.8;
+            ">
+                If you did not create an account, you can safely ignore this email.
+            </p>
+
+        </td>
+    </tr>
+
+    <!-- Footer -->
+    <tr>
+        <td style="
+            background:#fff7ed;
+            text-align:center;
+            padding:30px;
+            border-top:1px solid #fed7aa;
+        ">
+
+            <p style="
+                margin:0;
+                color:#9a3412;
+                font-size:14px;
+                font-weight:600;
+            ">
+                URL Shortener
+            </p>
+
+            <p style="
+                margin-top:10px;
+                color:#a16207;
+                font-size:12px;
+            ">
+                Create, Manage & Track Links Effortlessly
+            </p>
+
+            <p style="
+                margin-top:15px;
+                color:#9ca3af;
+                font-size:12px;
+            ">
+                © 2025 URL Shortener. All rights reserved.
+            </p>
+
+        </td>
+    </tr>
+
+</table>
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>
